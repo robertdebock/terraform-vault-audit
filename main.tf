@@ -6,14 +6,3 @@ resource "vault_audit" "default" {
   options     = var.audit_devices[count.index].options
   description = try(var.audit_devices[count.index].description, null)
 }
-
-# resource "vault_audit" "test" {
-#   type  = "socket"
-#   path  = "app_socket"
-#   local = false
-#   options = {
-#     address     = "127.0.0.1:8000"
-#     socket_type = "tcp"
-#     description = "application x socket"
-#   }
-# }
