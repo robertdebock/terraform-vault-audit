@@ -30,7 +30,7 @@ jobs:
         ports:
           - 8200:8201
       socket:
-        image: robertdebock/alpine:docker-netstat
+        image: robertdebock/alpine:docker-netcat
         env:
           port: 8000
         ports:
