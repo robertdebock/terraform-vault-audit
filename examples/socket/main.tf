@@ -6,7 +6,7 @@ module "vault_audit" {
     path        = "app_socket"
     local       = false
     options = {
-      address     = "127.0.0.1:8000"
+      address     = "socket:8000"
       socket_type = "tcp"
     }
   }]
