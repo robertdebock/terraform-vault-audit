@@ -31,8 +31,8 @@ jobs:
           - 8200:8201
       socket:
         image: subfuzion/netcat
-        options:
-          - "-vl 8000"
+        options: >-
+          -vl 8000
         ports:
           - 8000
     steps:
